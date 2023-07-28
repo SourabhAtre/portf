@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<style>
+    .covid-img img{
+        width: 1242px;
+        height: auto;
+    }
+    .covid-img{
+        margin-top: 50px;
+    }
+    @media screen and (max-width: 1265px) {
+        .covid-img{
+          margin-top: 20px;
+        }
+        .covid-img img{
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+<body>
+    <div class="first-main-container">
+        <div class="covid-img">
+            <img src="New images/Covid frame22.png" alt="" id="covid-img" />
+        </div>
+    </div>
+<footer class="section5">
+<div class="section5-container">
+  <div class="s5-part1">
+    <p class="s5-part1-h1">
+      Design with empathy, create with purpose, and shape unforgettable
+      user experiences.
+    </p>
+  </div>
+  <div class="s5-part3">
+    <div class="s5-part3-left">
+      <a href="mailto:sourabhatre90@gmail.com">mail_me@</a>
+    </div>
+    <div class="s5-part3-mid">
+      <div class="img1-container">
+        <a href="https://www.instagram.com/_sourabh._21/"><img src="New images/Instagram-v051916-150x150.png" alt="" /></a>
+      </div>
+      <div class="img2-container">
+        <a href="https://github.com/SourabhAtre"><img src="New images/github.png" alt="" /></a>
+      </div>
+      <div class="img3-container">
+        <a href="https://www.linkedin.com/in/sourabh-atre-a402611b6/"><img src="New images/702300.png"
+            alt="" /></a>
+      </div>
+      <div class="img4-container">
+        <a href="https://dribbble.com/AesthetiX_Design"><img src="New images/dribbble.png" alt="" /></a>
+      </div>
+    </div>
+    <div class="s5-part3-right">
+      <img src="New images/Gmap.png" alt="" />
+      <p class="s5-part3-right-h1">INDIA</p>
+    </div>
+  </div>
+</div>
+</footer>
+<script>
+    // Change navbar color when scrolling to a section
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.nav-container');
+        const changeColorSection = document.querySelector('.covid-img');
+        const rect = changeColorSection.getBoundingClientRect();
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const changeColorSectionTop = rect.top + scrollTop;
+
+        if (scrollTop >= changeColorSectionTop) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>    
+</body>
+</html>

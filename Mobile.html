@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Navbar Color Change</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+
+    .MB-container1 {
+      max-width: 1242px;
+      height: auto;
+      /* background: linear-gradient(to right, rgba(245, 227, 230, 1), rgba(217, 228, 245, 1)); */
+      border: double 0px transparent;
+      background-image: linear-gradient(to right, rgba(245, 227, 230, 1), rgba(217, 228, 245, 1)),
+      linear-gradient(180deg,rgba(158, 31, 99, 1),rgba(57, 45, 145, 1));
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      border-radius: 60px;
+      text-align: center;
+      padding: 12px;
+      box-sizing: border-box;
+      margin-top: 50px;
+    }
+
+    .C1-box2 {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .ip1 {
+      display: flex;
+      gap: 20px;
+      flex-direction: none;
+    }
+
+    .ip2 {
+      display: flex;
+      gap: 20px;
+      flex-direction: none;
+    }
+
+    .C1-img img {
+      display: flex;
+      flex-direction: row;
+      max-width: 280px;
+      height: auto;
+    }
+
+    .C1-box1-hr {
+      border: 3.5px solid black;
+      border-radius: 20px;
+      max-width: 774px;
+    }
+
+    .C1-box1-h1 {
+      font-size: 41px;
+      word-spacing: 3%;
+      font-family: mulishB;
+    }
+
+    .MB-container2 {
+      margin-top: 50px;
+    }
+
+    .C2-container1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 1242px;
+      height: auto;
+      /* background: linear-gradient(to right, rgba(245, 227, 230, 1), rgba(217, 228, 245, 1)); */
+      border: double 0px transparent;
+      background-image: linear-gradient(to right, rgba(245, 227, 230, 1), rgba(217, 228, 245, 1)),
+      linear-gradient(180deg,rgba(158, 31, 99, 1),rgba(57, 45, 145, 1));
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      border-radius: 60px;
+      gap: 10px;
+      padding: 12px;
+      box-sizing: border-box;
+
+    }
+
+    .C2-image-box {
+      display: flex;
+      flex-direction: row;
+      margin: 20px auto;
+      padding: 10px 0px 0px 0px;
+      justify-content: space-around;
+    }
+
+    .C2-img2 img {
+      max-width: 280px;
+      height: auto;
+    }
+    .C2-right{
+      padding: 0px 20px 0px 0px;
+    }
+    .C2-h1 {
+      font-size: 34px;
+      font-family: mulishB;
+      text-align: center;
+    }
+
+    .C2-hr1 {
+      max-width: 166px;
+      border: 3.5px solid black;
+      border-radius: 20px;
+    }
+
+    @media screen and (max-width: 1265px) {
+      .MB-container1 {
+        border-radius: 30px;
+        max-width: 100%;
+        padding: 6px;
+        height: auto;
+      }
+
+      .C1-box1-h1 {
+        font-size: 15px;
+      }
+
+      .C1-box1-hr {
+        border: 2px solid black;
+      }
+
+      .C1-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .MB-container2 {
+        width: 100%;
+    }
+      .C2-container1 {
+        width: 100%;
+        padding: 6px;
+        border-radius: 30px;
+        height: auto;
+      }
+
+      .C1-img2 img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .C1-right {
+        margin-top: 60px;
+      }
+
+      .C2-img2 img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .C2-h1 {
+        font-size: 15px;
+      }
+
+      .C2-hr1 {
+        border: 2px solid black;
+      }
+      .C2-image-box {
+        margin: 5px auto;
+        padding: 5px 0px 0px 10px;
+      }
+      .C2-right{
+      padding: 0px 10px 0px 0px;
+    }
+    }
+
+    @media screen and (max-width: 700px) {
+      .ip1 {
+        display: flex;
+        gap: 5px;
+        flex-direction: row;
+      }
+
+      .ip2 {
+        display: flex;
+        gap: 5px;
+        flex-direction: row;
+      }
+      .C1-box1{
+        padding: 10px;
+      }
+      .C1-box2 {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        gap: 5px;
+      }
+
+      .C2-container1 {
+        border-radius: 30px;
+      }
+
+      .C2-image-box {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .MB-container2 {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="first-main-container">
+    <div class="MB-container1">
+      <div class="C1-box1">
+        <p class="C1-box1-h1">Eatmore - Food ordering app
+          <hr class="C1-box1-hr" />
+        </p>
+
+        <div class="C1-box2">
+          <div class="ip1">
+            <div class="C1-img">
+              <img src="New images/img1.png" alt="">
+            </div>
+            <div class="C1-img">
+              <img src="New images/img2.png" alt="">
+            </div>
+          </div>
+          <div class="ip2">
+            <div class="C1-img">
+              <img src="New images/img3.png" alt="">
+            </div>
+            <div class="C1-img">
+              <img src="New images/img4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="MB-container2">
+      <div class="C2-container1">
+        <div class="C2-image-box">
+          <div class="C2-img2">
+            <img src="New images/img5.png" alt="">
+          </div>
+          <div class="C2-img2">
+            <img src="New images/img6.png" alt="">
+          </div>
+          <div class="C2-img2">
+            <img src="New images/img7.png" alt="">
+          </div>
+        </div>
+        <div class="C2-right">
+          <p class="C2-h1">Raw designs</p>
+          <hr class="C2-hr1" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="section5">
+    <div class="section5-container">
+      <div class="s5-part1">
+        <p class="s5-part1-h1">
+          Design with empathy, create with purpose, and shape unforgettable
+          user experiences.
+        </p>
+      </div>
+      <div class="s5-part3">
+        <div class="s5-part3-left">
+          <a href="https://www.gmail.com/">mail_me@</a>
+        </div>
+        <div class="s5-part3-mid">
+          <div class="img1-container">
+            <a href="https://www.instagram.com/"><img src="New images/Instagram-v051916-150x150.png" alt="" /></a>
+          </div>
+          <div class="img2-container">
+            <a href="https://github.com/SourabhAtre"><img src="New images/github.png" alt="" /></a>
+          </div>
+          <div class="img3-container">
+            <a href="https://www.linkedin.com/in/sourabh-atre-a402611b6/"><img src="New images/702300.png"
+                alt="" /></a>
+          </div>
+          <div class="img4-container">
+            <a href="https://dribbble.com/AesthetiX_Design"><img src="New images/dribbble.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="s5-part3-right">
+          <img src="New images/Gmap.png" alt="" />
+          <p class="s5-part3-right-h1">INDIA</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Change navbar color when scrolling to a section
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.nav-container');
+      const changeColorSection = document.querySelector('.MB-container1');
+      const rect = changeColorSection.getBoundingClientRect();
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const changeColorSectionTop = rect.top + scrollTop;
+
+      if (scrollTop >= changeColorSectionTop) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+
+</html>

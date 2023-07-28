@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Home page</title>
+</head>
+
+<body>
+  <div class="first-main-container">
+    <nav class="nav-container">
+      <div class="nav-items">
+        <a href="#name1" class="navbar">About</a>
+        <a href="#section123" class="navbar">Work</a>
+        <a href="#section4" class="navbar">Contact</a>
+      </div>
+    </nav>
+
+    <div class="section0">
+      <div id="name1" class="name">
+        Hey, its me <br />
+        Sourabh
+      </div>
+      <div class="intro">
+        I possess a remarkable skill set in creating smooth user interfaces that foster meaningful interactions with
+        information and data. Through my deep understanding of user needs, I have honed the ability to craft intuitive
+        experiences that seamlessly blend functionality and aesthetics. My designs not only prioritize usability but
+        also reflect the captivating beauty and harmonious flow found in diverse cultures worldwide. By leveraging my
+        expertise in Figma, frontend designing languages such as HTML, CSS, JavaScript, and frameworks like Bootstrap, I
+        bring my designs to life and ensure a seamless user experience across different platforms. With these skills, I
+        leave an indelible mark on the digital landscape, captivating users and driving engagement.
+      </div>
+    </div>
+
+    <div id="section123" class="box-section1">
+      <div class="s1-box1" onclick="tomobile()">
+        <p class="s1-box1-h1">Mobile Designs</p>
+        <hr class="s1-box1-hr" />
+        <img id="s1-img1" src="New images/Group 22.png" alt="" />
+      </div>
+      <div class="s1-box2" onclick="towindows()">
+        <p class="s1-box2-h1">Windows</p>
+        <hr class="s1-box2-hr" />
+      </div>
+    </div>
+
+
+    <div class="section3" onclick="tocovid()">
+      <div class="s3-box1">
+        <div class="s3-right">
+          <p class="s3-h1">Single page complete website design</p>
+          <p class="s3-h2">CLICK HERE TO VIEW</p>
+          <hr class="s3-hr1"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="section2">
+      <div class="s2-box1 s2-box1-C2">
+        <div class="s2-written-container">
+          <p class="s2-box1-h1">SEO Designs</p>
+          <hr class="s2-hr1"/>
+          <p class="s2-box1-h2">
+            A balance between aesthetic appeal and SEO requirements. By
+            prioritizing user experience (UX) and incorporating SEO-friendly
+            design elements.
+          </p>
+        </div>
+        <div class="s2-img1">
+          <img id="s2-img1" src="New images/Group 23.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+   
+
+    
+
+    <div class="a-tag-main-container">
+      <div class="anchor-tag-container">
+        <div class="email-container">
+          <a href="mailto:sourabhatre90@gmail.com">
+            <div class="email1"></div>
+          </a>
+        </div>
+        <div class="box-container">
+          <a href="https://www.instagram.com/_sourabh._21/">
+            <div class="box1"></div>
+          </a>
+          <a href="https://github.com/SourabhAtre">
+            <div class="box2"></div>
+          </a>
+          <a href="https://www.linkedin.com/in/sourabh-atre-a402611b6/">
+            <div class="box3"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section4" id="section4">
+      <div class="section4-part1">
+        <div class="s4-part1">
+          <p class="s4-part1-h1">Get in touch</p>
+          <hr class="s4-hr1" />
+        </div>
+  
+        <hr class="s4-hr2" />
+
+        <div class="s4-part2">
+          <img src="New images/GIT.png" alt="" id="s4-img" />
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer class="section5">
+    <div class="section5-container">
+      <div class="s5-part1">
+        <p class="s5-part1-h1">
+          Design with empathy, create with purpose, and shape unforgettable
+          user experiences.
+        </p>
+      </div>
+      <div class="s5-part3">
+        <div class="s5-part3-left">
+          <a href="mailto:sourabhatre90@gmail.com">mail_me@</a>
+        </div>
+        <div class="s5-part3-mid">
+          <div class="img1-container">
+            <a href="https://www.instagram.com/_sourabh._21/"><img src="New images/Instagram-v051916-150x150.png" alt="" /></a>
+          </div>
+          <div class="img2-container">
+            <a href="https://github.com/SourabhAtre"><img src="New images/github.png" alt="" /></a>
+          </div>
+          <div class="img3-container">
+            <a href="https://www.linkedin.com/in/sourabh-atre-a402611b6/"><img src="New images/702300.png" alt="" /></a>
+          </div>
+          <div class="img4-container">
+            <a href="https://dribbble.com/AesthetiX_Design"><img src="New images/dribbble.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="s5-part3-right">
+          <img src="New images/Gmap.png" alt="" />
+          <p class="s5-part3-right-h1">INDIA</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    function tomobile() {
+      var destination = "Mobile.html";
+
+      window.location.href = destination;
+    }
+    function towindows() {
+      var destination = "Windows.html";
+
+      window.location.href = destination;
+    }
+    function tocovid() {
+      var destination = "covid frame.html";
+
+      window.location.href = destination;
+    }
+  </script>
+  <script>
+        // Change navbar color when scrolling to a section
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.nav-container');
+            const changeColorSection = document.querySelector('.box-section1');
+            const rect = changeColorSection.getBoundingClientRect();
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const changeColorSectionTop = rect.top + scrollTop;
+
+            if (scrollTop >= changeColorSectionTop) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+  </script>
+</body>
+
+</html>
